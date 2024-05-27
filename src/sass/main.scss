@@ -1,0 +1,262 @@
+* {
+    // width: fit-content;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Caudex', serif;
+    // overflow-y: scroll;
+    // width: 100vw;
+    // width: calc(100vw - 110rem);    
+    
+}
+:root {
+    overflow-x: hidden; //clip better than hidden, hidden broke the header ishidingheader
+    background-color: rgb(232, 236, 238);
+
+}
+
+.firstscreen {
+    height: 100vh;
+    width: 100vw;
+    background-color: #2c2c2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // position: absolute;
+    position: fixed;
+    // bottom: 0;
+    z-index: 1000;
+    overflow-y: hidden;
+
+    // border-bottom-left-radius: 50% 20px; /* Adjust the negative value to control the inward curve */
+    // border-bottom-right-radius: 50% 20px;
+
+    h1 {
+        margin-top: -5rem;
+        font-size: 64px;
+        color: rgba(255, 255, 255, 0.413);
+
+    }
+    .innerbox {
+        width: 100vw;
+        height: 20rem;
+        position: absolute;
+        top: 85%;
+        background-color: rgb(14, 13, 13);
+        border-top-left-radius: 50% 50px;
+        border-top-right-radius: 50% 50px;
+
+
+    }
+}
+
+     
+    
+    .headercontainer {
+    // margin-right: 1rem;
+
+        // margin-top: 4rem;
+        height: 8rem;
+
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: left;
+        margin-left: 14.5rem;
+        align-items: center;
+        width: 100vw;
+        transition: all 0.25s ease-in;
+            // height: 3rem;
+            background-color: rgba(237, 233, 233, 0);
+
+
+
+        &.ishidingheader {
+
+            transform: translateY(-6rem);
+            transition: all 0.45s ease-in;
+        }
+    
+
+    
+        .header {
+            // border: solid red;
+            // position: sticky;
+            padding-inline: 1.5rem;
+            // width: 100%;
+            border-radius: 2rem;
+            border: solid rgba(255, 255, 255, 0.354) 1px;
+            display: flex;
+            gap: 10rem;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            height: 2.5rem;
+            width: 15rem;
+    
+            align-items: center;
+            // justify-content: space-between;
+            // gap: 18rem;
+            background-color: #0f0f0f3d;
+            transition: all 0.25s ease-in;
+
+           
+            .name {
+                // border: solid red;
+
+                height: auto;
+                font-size: 10px;
+                letter-spacing: 0.2rem;
+    
+    
+            }
+            h1 {
+                color: rgba(255, 255, 255, 0.413);
+            }
+    
+        }
+
+        .navbar {
+
+            // border: solid blue;
+            ul {
+                display: flex;
+                gap: 1.5rem;
+                
+                li {
+                    color: rgba(255, 255, 255, 0.413);
+                    // border: solid 1px;
+                    padding: 0.35rem;
+                    font-size: 18px;
+                    padding-inline: 1rem;
+                    border-radius: 1rem;
+                    min-width: fit-content;
+
+                }
+            }
+        }
+
+        .contact {
+            button {
+                font-size: 18px;
+                padding: 0.35rem;
+                padding-inline: 1rem;
+                background-color: rgba(0, 0, 0, 0);
+                color: rgba(255, 255, 255, 0.413);
+                border: none;
+                border-radius: 1rem;
+
+
+
+            }
+        }
+        
+        }
+
+    // dont forget to translate this out of the way
+    
+     
+        
+
+    .routersection {
+        width: calc(100vw - 1rem);        // overflow: scroll;
+
+        margin-top: -8rem;
+  
+
+    }
+
+
+ 
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        height: 40rem;
+        padding-top: 2rem;
+        // border: solid red;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background-color: rgba(10, 10, 10, 0.993);
+
+        .logoandnav {
+            display: flex;
+            justify-content: space-between;
+
+            // border: solid;
+
+
+            .logoname {
+                display: flex;
+    
+                // border: solid;
+                flex-direction: column;
+                // align-items: center;
+    
+                gap: 0.5rem;
+                width: 4rem;
+                // height: auto;
+    
+    
+    
+                .img1 {
+                    // border: solid;
+                    width: 4rem;
+                    height: auto;
+                    
+                }
+                .img2 {
+                    // border: solid;
+                    width: 8.5rem;
+                    height: auto;
+                }
+    
+    
+            }
+    
+            .nav {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                margin-top: 1rem;
+    
+                .navitem {
+    
+                    
+                    a {
+                        
+                        border-bottom: solid 1px #f8a9d1;
+                        color: #ffffff;
+                    }
+    
+                }
+    
+                .socials {
+                    display: flex;
+                    gap: 0.6rem;
+        
+                    svg {
+                        fill: #ffffff;
+        
+                    }
+        
+                }
+            }
+        }
+
+
+
+        .rights {
+            background-color: rgba(10, 10, 10, 0.993);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem;
+
+        }
+    }
